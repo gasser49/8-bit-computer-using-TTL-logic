@@ -1,83 +1,93 @@
-# 8-bit-computer-using-TTL-logic
-OVERVIEW
+# 8-bit Computer Using TTL Logic
+
+## Overview
+
 This project is a manually controlled 8-bit computer using TTL logic ICs on breadboard. The goal was to build a fully functioning computer that works at a hardware level.
 
-The computer was designed, wired, tested and debugged manually. While using external resources(Ben Eater’s 8-bit computer series) as a technical reference to verify wiring and avoid damaging components.
+The computer was designed, wired, tested and debugged manually while using external resources (Ben Eater's 8-bit computer series) as a technical reference to verify wiring and avoid damaging components.
 
-The control unit is not microcoded; instead, the computer is operated through manual control signal to each execution.
+The control unit is not microcoded; instead, the computer is operated through manual control signals for each execution.
 
-SYSTEM ARCHITECTURE
-Core Components:
-    8-bit data bus
-    Register A and Register B
-    ALU capable of addition and subtraction
-    RAM module for data storage 
-    Instruction register
-    Program counter
-    Output display module
-Control:
-    No EEPROM microcode
-    Control signals are manually asserted
-Clock System:
-    Discrete clock circuit
-    Manual and automatic modes
+## System Architecture
 
-BUILD PROCESS
-Built over two weeks
-About 6 hours daily 
-Each module was:
-    designed
-    wired
-    tested
-    verified before integration
+### Core Components
+- 8-bit data bus
+- Register A and Register B
+- ALU capable of addition and subtraction
+- RAM module for data storage
+- Instruction register
+- Program counter
+- Output display module
+
+### Control
+- No EEPROM microcode
+- Control signals are manually asserted
+
+### Clock System
+- Discrete clock circuit
+- Manual and automatic modes
+
+## Build Process
+
+- **Duration**: Built over two weeks at about 6 hours daily
+- **Process**: Each module was designed, wired, tested, and verified before integration
+
 Most subsystems function reliably on their own. However, when fully integrated, intermittent instability appears.
 
-TECHNICAL CHALLENGES AND DEBUGGING
-the only challenge faced me was the system instability when all modules were connected together. After observation I concluded that:
-    The clock starts normally, then becomes unstable
-    Random behavior unless slight pressure or board adjustment was applied
+## Technical Challenges and Debugging
 
-Investigated causes:
-    breadboard contact resistance 
-    Signal noise and long clock lines 
-    IC quality inconsistencies (local component availability)
+The primary challenge was system instability when all modules were connected together. After observation, the following was concluded:
 
-Mitigation Attempts to solve it:
-    Decoupling capacitors on every IC
-    Shortened clock wiring
-    Clock buffering
-    Replacing clock IC
-    RE-testing modules individually (all passed)
+### Symptoms
+- The clock starts normally, then becomes unstable
+- Random behavior unless slight pressure or board adjustment was applied
 
-Despite all this effort the issue remained under full integration, leading to the conclusion that component quality and breadboard limitations were the primary causes 
+### Investigated Causes
+- Breadboard contact resistance
+- Signal noise and long clock lines
+- IC quality inconsistencies (local component availability)
 
-USE OF EXTERNAL REFERENCES 
-Ben Eater’s 8-bit computer series was used as:
-    A conceptual reference
-    A wiring verification guide to prevent damage 
-Only one submodule(the display unit) follows the reference design after an EEPROM was damaged during experimentation. this decision was made due to component cost.
+### Mitigation Attempts
+- Decoupling capacitors on every IC
+- Shortened clock wiring
+- Clock buffering
+- Replacing clock IC
+- Re-testing modules individually (all passed)
 
-WHAT THIS PROJECT DEMONSTRATES 
-understanding of:
-    Digital logic
-    Data bus
-    Registers and ALU operation and design
-    Clock distribution
+Despite these efforts, the issue remained under full integration, leading to the conclusion that component quality and breadboard limitations were the primary causes.
 
-The ability to learn complex systems
+## Use of External References
 
-LIMITATIONS AND FUTURE WORK
-Current limitation:
-    No automated control unit(microcoded control unit)
-    intermittent instability under full system integration
+Ben Eater's 8-bit computer series was used as:
+- A conceptual reference
+- A wiring verification guide to prevent damage
 
-Future improvements:
-    PCB-based version of the 8-bit computer
-    Microcoded control unit using EEPROM
+Only one submodule (the display unit) follows the reference design after an EEPROM was damaged during experimentation. This decision was made due to component cost.
 
-AUTHOR
-High school student (Thanawya Amma/Grade 11)
+## What This Project Demonstrates
+
+### Understanding of:
+- Digital logic
+- Data bus
+- Registers and ALU operation and design
+- Clock distribution
+- The ability to learn complex systems
+
+## Limitations and Future Work
+
+### Current Limitations
+- No automated control unit (microcoded control unit)
+- Intermittent instability under full system integration
+
+### Future Improvements
+- PCB-based version of the 8-bit computer
+- Microcoded control unit using EEPROM
+
+## Author
+
+High school student (Thanawya Amma/Grade 11)  
 Aspiring to be a Computer Engineer
 
-LICENSE
+## License
+
 Educational / personal project
