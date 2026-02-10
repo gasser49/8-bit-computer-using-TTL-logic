@@ -32,7 +32,7 @@ The control unit is not microcoded; instead, the computer is operated through ma
 
 ## Build Process
 
-- **Duration**: Built over two weeks at about 6 hours daily
+- **Duration**: Built over two to three weeks at about 6 hours daily
 - **Process**: Each module was designed, wired, tested, and verified before integration
 
 Most subsystems function reliably on their own. However, when fully integrated, intermittent instability appears.
