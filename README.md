@@ -8,6 +8,9 @@ The computer was designed, wired, tested and debugged manually while using exter
 
 The control unit is not microcoded; instead, the computer is operated through manual control signals for each execution.
 
+## Video documentation (wiring, testing)
+- https://youtube.com/playlist?list=PLksuvnj3mpLGEFsioQ8tjdo8dZZ7gaVC_&si=0-ix42xb5nYniTDr
+
 ## System Architecture
 
 ### Core Components
